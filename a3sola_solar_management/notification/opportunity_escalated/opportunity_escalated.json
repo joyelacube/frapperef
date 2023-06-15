@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == \"Open\" and doc.ends_on==nowdate()",
+ "creation": "2022-10-12 14:12:00.753720",
+ "date_changed": "contact_date",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Opportunity",
+ "enabled": 0,
+ "event": "Days After",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "This Opportunity has been assigned to {{doc.next_contact_by}} to be completed on or before {{doc.ends_on}}.\nThe opportunity status has not been followed up and status remains the same.",
+ "modified": "2022-10-26 15:41:20.296969",
+ "modified_by": "Administrator",
+ "module": "a3sola Solar Management",
+ "name": "Opportunity Escalated",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "escalation_manager",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Opportunity {{doc.name}} Escalated"
+}

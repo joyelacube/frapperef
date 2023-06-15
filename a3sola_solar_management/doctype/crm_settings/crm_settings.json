@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-29 15:51:58.618653",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_settings_section",
+  "lead_naming_series",
+  "automate_lead",
+  "lead_assignment_rule",
+  "lead_users",
+  "emi_follow_up_user",
+  "column_break_6",
+  "send_customer_notiication",
+  "notify_escalation_manager",
+  "aml",
+  "consumer_number_mandatory",
+  "contact_number_validation",
+  "escalation_mannager_for_lead",
+  "next_contact_period",
+  "default_follow_up_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Settings"
+  },
+  {
+   "fieldname": "lead_naming_series",
+   "fieldtype": "Select",
+   "label": "Lead Naming Series",
+   "no_copy": 1,
+   "options": "CRM-LS-.YYYY.-"
+  },
+  {
+   "fieldname": "lead_assignment_rule",
+   "fieldtype": "Link",
+   "label": "Lead Assignment rule",
+   "options": "Assignment Rule"
+  },
+  {
+   "fieldname": "lead_users",
+   "fieldtype": "Table MultiSelect",
+   "label": "Lead Users",
+   "options": "Lead Users"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_customer_notiication",
+   "fieldtype": "Check",
+   "label": "Send Customer Notiication"
+  },
+  {
+   "default": "0",
+   "fieldname": "notify_escalation_manager",
+   "fieldtype": "Check",
+   "label": "Notify Escalation Manager"
+  },
+  {
+   "fieldname": "escalation_mannager_for_lead",
+   "fieldtype": "Link",
+   "label": "Escalation Manager For Lead",
+   "options": "User"
+  },
+  {
+   "fieldname": "next_contact_period",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Next Contact Period"
+  },
+  {
+   "default": "0",
+   "fieldname": "automate_lead",
+   "fieldtype": "Check",
+   "label": "Automate Lead Assignment"
+  },
+  {
+   "default": "0",
+   "fieldname": "aml",
+   "fieldtype": "Check",
+   "label": "Aadhaar Number Madatory in Lead"
+  },
+  {
+   "default": "0",
+   "fieldname": "consumer_number_mandatory",
+   "fieldtype": "Check",
+   "label": "Consumer Number Mandatory"
+  },
+  {
+   "default": "0",
+   "fieldname": "contact_number_validation",
+   "fieldtype": "Check",
+   "label": "Contact Number Validation"
+  },
+  {
+   "fieldname": "emi_follow_up_user",
+   "fieldtype": "Link",
+   "label": "EMI Follow Up User",
+   "options": "User"
+  },
+  {
+   "fieldname": "default_follow_up_user",
+   "fieldtype": "Link",
+   "label": "Default Follow Up User",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-05-10 12:33:05.618348",
+ "modified_by": "Administrator",
+ "module": "a3sola Solar Management",
+ "name": "CRM Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
